@@ -1,0 +1,9 @@
+{
+    "author": {
+        "name": "Yoseph Maguire"
+    },
+    "description": "example of server",
+    "dependencies": {
+        "colors": "^1.4.0",
+    }
+}
