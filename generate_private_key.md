@@ -35,13 +35,16 @@ The purpose of this CSR is to "request" a certificate. That is, if you wanted a 
 
 Alternately, however, you may self-sign your certificate, again using your private key:
 
+```bash
 $ openssl x509 -req -in csr.pem -signkey private-key.pem -out public-cert.pem
 Signature ok
 subject=/C=US/ST=California/L=Oakland/O=Panco, Inc./CN=Joshua Holbrook/emailAddress=josh.holbrook@gmail.com
 Getting Private key
-
+```
 
 Trying it out:
 One way to test out your new "hello world" server is to again use OpenSSL:
 
-openssl s_client -connect 127.0.0.1:8000
+```bash
+$ openssl s_client -connect 127.0.0.1:8000
+```
